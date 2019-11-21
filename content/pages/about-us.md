@@ -15,6 +15,6 @@ blocks:
     long boat six pounders smartly cutlass Barbary Coast deadlights Blimey nipper.
     Shiver me timbers lugsail Privateer careen starboard American Main coffer gaff
     cable quarter.</p>"
-robots_: false
+robots_: true
 
 ---
