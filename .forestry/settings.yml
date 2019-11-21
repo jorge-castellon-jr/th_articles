@@ -14,6 +14,8 @@ sections:
   label: Articles
   create: documents
   match: "**/*"
+  templates:
+  - article
 - type: directory
   path: content/pages
   label: Pages
