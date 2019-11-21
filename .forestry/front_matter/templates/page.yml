@@ -31,4 +31,3 @@ fields:
 - name: robots_
   type: boolean
   label: Robots Follow?
-pages:
