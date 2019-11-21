@@ -31,3 +31,5 @@ fields:
 - name: robots_
   type: boolean
   label: Robots Follow?
+pages:
+- content/pages/about-us.md
