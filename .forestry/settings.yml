@@ -10,6 +10,11 @@ sections:
   path: content/data/home.json
   label: Homepage
 - type: directory
+  path: content/articles
+  label: Articles
+  create: documents
+  match: "**/*"
+- type: directory
   path: content/pages
   label: Pages
   create: documents
