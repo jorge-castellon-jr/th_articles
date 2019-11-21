@@ -1,0 +1,34 @@
+---
+label: Page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+  description: Enter title, needs to match filename for routing
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: blocks
+  type: blocks
+  template_types:
+  - columns
+  - cards
+  - content
+  - gallery
+  config:
+    min: 
+    max: 
+  label: Blocks
+- name: robots_
+  type: boolean
+  label: Robots Follow?
+pages:

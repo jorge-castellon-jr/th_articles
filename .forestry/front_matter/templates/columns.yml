@@ -1,0 +1,66 @@
+---
+label: Columns
+hide_body: true
+fields:
+- name: columns
+  type: field_group_list
+  fields:
+  - name: type
+    type: select
+    default: Content
+    config:
+      required: false
+      options:
+      - Content
+      - Image
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
+  - name: column_image
+    type: file
+    config:
+      maxSize: 250
+    showOnly:
+      field: type
+      value: Image
+    label: Column Image
+  - name: column_content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Column Content
+    showOnly:
+      field: type
+      value: Content
+  - name: button_
+    type: boolean
+    label: Button?
+  - name: button_label
+    type: text
+    config:
+      required: false
+    label: Button Label
+    showOnly:
+      field: button_
+      value: true
+  - name: button_link
+    type: text
+    config:
+      required: false
+    label: Button Link
+    showOnly:
+      field: button_
+      value: true
+  config:
+    min: '2'
+    max: '4'
+    labelField: type
+  label: Columns
+  description: Min of 2 columns and max of 4 columns

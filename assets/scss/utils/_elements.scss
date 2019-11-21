@@ -1,0 +1,85 @@
+//--------------------------------------------------------------
+// HTML Elements
+//--------------------------------------------------------------
+
+//--------------------------------------------------------------
+// Iframes
+//--------------------------------------------------------------
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+} // embed, iframe, object
+
+hr {
+	@include size(auto, 1px);
+
+	background-color: $color-background-hr;
+	border: 0;
+	margin: 0 0 rem(24) 0;
+} // hr
+
+figure {
+	margin: 0;
+} // figure
+
+// --------------------------------------------------------------
+// Images
+// --------------------------------------------------------------
+
+img {
+	height: auto;
+	max-width: 100%;
+	flex-shrink: 0;
+	margin-bottom: 15px;
+}
+
+//--------------------------------------------------------------
+// Lists
+//--------------------------------------------------------------
+
+ul,
+ol {
+	margin: 0 auto rem(48) auto;
+} // ul, ol
+
+ul {
+	list-style: disc;
+} // ul
+
+ol {
+	list-style: decimal;
+} // ol
+
+ul li,
+ol li {
+	margin-bottom: 0.5em;
+}
+
+li > ul,
+li > ol {
+	margin: 0 0 0 rem(24);
+} // li > ul, li > ol
+
+dt {
+	font-weight: 700;
+} // dt
+
+dd {
+	margin: 0 auto rem(24) auto;
+} // dd
+
+//--------------------------------------------------------------
+// Tables
+//--------------------------------------------------------------
+
+table {
+	@include size(100%, auto);
+
+	margin: 0 0 rem(24) 0;
+} // table
+
+th {
+	font-weight: 700;
+} // th
