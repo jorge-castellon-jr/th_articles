@@ -8,7 +8,7 @@
 html, * {
 	// sass-lint:disable property-units
 	font-family: 'Inter', sans-serif; 
-	font-size: $base-context * 1.6 * 1px;
+	font-size: $base-context * 1px;
 	// sass-lint:enable property-units
 }
 @supports (font-variation-settings: normal) {
