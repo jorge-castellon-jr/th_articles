@@ -8,6 +8,7 @@
     <h2 class="subtitle">
       My mathematical Nuxt.js project
     </h2>
+    <RecentArticles :articles="articles" />
     <div class="links">
       <p v-for="page in pages" :key="page.attributes.title">
         <nuxt-link :to="`/${formatSlug(page.attributes.title)}`">
@@ -24,6 +25,9 @@ import Logo from '~/components/Logo.vue'
 import util from '~/assets/js/utils/global_func'
 import homeJSON from '~/content/data/home.json'
 
+// Components
+import RecentArticles from '~/components/RecentArticles.vue'
+
 export default {
   head () {
     return {
@@ -33,11 +37,12 @@ export default {
     }
   },
   async asyncData () {
-    let url = "https://edge-pro.netlify.com",
+    let url = "https://th-articles.netlify.com",
         logoURL = url + homeJSON.home_logo
 
     return {
       pages: await util.getAllPages(),
+      articles: await util.getAllArticles(),
       structuredData: {
         "@context": "http://schema.org",
         "@graph": [
@@ -79,7 +84,8 @@ export default {
     }
   },
   components: {
-    Logo
+    Logo,
+    RecentArticles
   },
   methods: {
     formatSlug( text ){

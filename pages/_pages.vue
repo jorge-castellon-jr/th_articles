@@ -1,13 +1,13 @@
 <template>
     <b-row class="th__row">
-        <navbar :json="home" :articles="articles" />
+        <navbar :json="home" />
         <b-row>
             <b-col>
-                <h1 class="title">{{ article.title }}</h1>
-                <Blocks :blocks="article.blocks" />
+                <h1 class="title">{{ page.title }}</h1>
+                <Blocks :blocks="page.blocks" />
             </b-col>
         </b-row>
-        <footerbar :articles="articles" />
+        <footerbar :pages="pages" />
     </b-row>
 </template>
 
@@ -23,10 +23,10 @@ import Blocks from '~/components/Blocks.vue'
 export default {
     head() {
         return {
-            title: this.article.title || '',
+            title: this.page.title || '',
             meta: [
-                { hid: 'description', name: 'description', content: this.article.description || '' },
-                { hid: 'robots', name: 'robots', content: this.article.robots_ ? 'noindex' : '' }
+                { hid: 'description', name: 'description', content: this.page.description || '' },
+                { hid: 'robots', name: 'robots', content: this.page.robots_ ? 'noindex' : '' }
             ],
             __dangerouslyDisableSanitizers: ['script'],
             script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }]
@@ -34,15 +34,15 @@ export default {
     },
     async asyncData ({ params }) {
         try {
-            let singleArticle = await util.getArticle( 'articles/' + params.articles ),
-                articles = await util.getAllArticles( 'articles'),
-                url = "https://edge-pro.netlify.com/",
-                currentarticle = url + params.articles,
+            let singlepage = await util.getSingle( 'pages/' + params.pages ),
+                pages = await util.getAllPages(),
+                url = "https://th-articles.netlify.com/",
+                currentpage = url + params.pages,
                 logoURL = url + homeJSON.home_logo
                 
             return {
-                article: singlearticle.default.attributes,
-                articles: articles,
+                page: singlepage.default.attributes,
+                pages: pages,
                 home: homeJSON,
                 structuredData: {
                     "@context": "http://schema.org",
@@ -66,10 +66,10 @@ export default {
                             },
                         },
                         {
-                            "@type": "Webarticle",
-                            "url": currentarticle,
-                            "name": singlearticle.default.attributes.title || "Did not work",
-                            "description": singlearticle.default.attributes.description || "Did not work",
+                            "@type": "Webpage",
+                            "url": currentpage,
+                            "name": singlepage.default.attributes.title || "Did not work",
+                            "description": singlepage.default.attributes.description || "Did not work",
                             "isPartOf": {
                                 "@type": "WebSite",
                                 "@id": url,
@@ -79,6 +79,7 @@ export default {
                 },
             }
         } catch (err) {
+            console.log('oh no wrong page')
             console.error(err)
             return false
         }

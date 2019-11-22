@@ -1,7 +1,7 @@
 <template>
     <b-row align-v="center"> 
         <b-col class="th__col">
-            <b-card-group deck="">
+            <b-card-group deck>
                 <b-card
                     v-for="card in block.cards"
                     :key="card.card_title"

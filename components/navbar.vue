@@ -2,8 +2,8 @@
     <b-navbar class="th__nav">
         <nuxt-link to="/">
             <b-navbar-brand>
-                <img :src="`${json.home_logo}`" :alt="`${json.home_name} Logo`">
-                <!-- {{ json.home_name }} -->
+                <img :src="`${json.company_logo}`" :alt="`${json.company_name} Logo`">
+                <!-- {{ json.company_name }} -->
             </b-navbar-brand>
         </nuxt-link>
     </b-navbar>

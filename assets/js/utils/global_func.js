@@ -1,7 +1,18 @@
 const util = {
 
-    getAllSingles ( source ) {
-        const resolve = require.context(`~/content/${source}/`, true, /\.md$/)
+    getAllPages () {
+        
+        const resolve = require.context('~/content/pages/', true, /\.md$/)
+
+        const imports = resolve.keys().map((key) => {
+            return resolve(key)
+        })
+
+        return imports
+    },
+    getAllArticles () {
+        
+        const resolve = require.context('~/content/articles/', true, /\.md$/)
 
         const imports = resolve.keys().map((key) => {
             return resolve(key)

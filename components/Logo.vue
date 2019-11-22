@@ -1,6 +1,6 @@
 <template>
   <div class="VueToNuxtLogo">
-    <img :src="home.home_logo" :alt="`${home.home_name} Logo`" />
+    <img :src="home.company_logo" :alt="`${home.company_name} Logo`" />
   </div>
 </template>
 
