@@ -1,7 +1,21 @@
 ---
-label: Company Info
+label: Home Info
 hide_body: true
 fields:
+- name: home_image
+  type: file
+  config:
+    maxSize: 250
+  label: Home Image
+- name: sub_headline
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Sub Headline
 - name: company_name
   type: text
   config:
@@ -116,5 +130,14 @@ fields:
   config:
     required: false
   label: Company Zip Code
+- name: about_organization
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: About Organization
 pages:
 - content/data/home.json
