@@ -5,7 +5,7 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
 - name: description
   type: textarea
@@ -21,6 +21,16 @@ fields:
   config:
     maxSize: 250
   label: Featured Image
+- name: article_date
+  type: datetime
+  label: Article Date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
 pages:
-- content/articles/article-test-2.md
 - content/articles/test-article-1.md
+- content/articles/article-test-2.md
