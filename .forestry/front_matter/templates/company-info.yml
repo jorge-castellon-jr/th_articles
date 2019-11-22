@@ -20,12 +20,21 @@ fields:
   type: text
   config:
     required: false
-  label: Company Name
+  label: Organization Name
 - name: company_logo
   type: file
   config:
     maxSize: 250
-  label: Company Logo
+  label: Organization Logo
+- name: about_organization
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: About Organization
 - name: primary_color
   type: color
   label: Primary Company Color
@@ -38,106 +47,5 @@ fields:
   config:
     required: false
     color_format: Hex
-- name: company_phone_number
-  type: number
-  label: Company Phone Number
-  description: ''
-  default: 0
-  config:
-    required: true
-    min: 
-    max: 
-    step: 
-- name: company_email
-  type: text
-  config:
-    required: false
-  label: Company Email
-- name: company_address
-  type: text
-  config:
-    required: false
-  label: Company Street Address
-- name: company_city
-  type: text
-  config:
-    required: false
-  label: Company City
-- name: state
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - AL
-    - AK
-    - AZ
-    - AR
-    - CA
-    - CO
-    - CT
-    - DE
-    - FL
-    - GA
-    - HI
-    - ID
-    - IL
-    - IN
-    - IA
-    - KS
-    - KY
-    - LA
-    - ME
-    - MD
-    - MA
-    - MI
-    - MN
-    - MS
-    - MO
-    - MT
-    - NE
-    - NV
-    - NH
-    - NJ
-    - NM
-    - NY
-    - NC
-    - ND
-    - OH
-    - OK
-    - OR
-    - PA
-    - RI
-    - SC
-    - SD
-    - TN
-    - TX
-    - UT
-    - VT
-    - VA
-    - WA
-    - WV
-    - WI
-    - WY
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: State
-- name: company_zip
-  type: text
-  config:
-    required: false
-  label: Company Zip Code
-- name: about_organization
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: About Organization
 pages:
 - content/data/home.json
