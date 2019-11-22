@@ -29,8 +29,8 @@ fields:
   label: Company Phone Number
   description: ''
   default: 0
-  required: true
   config:
+    required: true
     min: 
     max: 
     step: 
