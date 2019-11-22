@@ -72,6 +72,9 @@ export default {
     Allow: '/media/',
     Allow: '/sitemap.xml'
   },
+  sitemap: {
+    hostname: 'https://th-articles.netlify.com/'
+  },
   /*
   ** Build configuration
   */
