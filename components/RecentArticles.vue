@@ -1,17 +1,21 @@
 <template>
-    <b-card-group deck>
-        <!-- {{ articles }} -->
-            <b-card :img-src="card.attributes.featured_image" v-for="card in articles" :key="card.attributes.title">
-                <!-- <b-card-img top :src="card.attributes.featured_image"></b-card-img> -->
+    <div class="th__recent">
+        <h2>Articles</h2>
+        <b-row v-for="card in articles" :key="card.attributes.title" align-v="center">
+            <b-col md="6">
                 <nuxt-link :to="`articles/${formatSlug(card.attributes.title)}`" class="th__link">
-                    <b-card-title>{{ card.attributes.title }}</b-card-title>
-                    <b-card-text>
-                        <p v-if="card.attributes.description == ''">{{ excerpt(card.html) }}</p>
-                        <p v-else>{{ card.attributes.description }}</p>
-                    </b-card-text>
+                    <b-img :src="card.attributes.featured_image"></b-img>
                 </nuxt-link>
-            </b-card>
-    </b-card-group>
+            </b-col>
+            <b-col class="th__right">
+                <nuxt-link :to="`articles/${formatSlug(card.attributes.title)}`" class="th__link">
+                    <h2>{{ card.attributes.title }}</h2>
+                    <p v-if="card.attributes.description == ''">{{ excerpt(card.html) }}</p>
+                    <p v-else>{{ card.attributes.description }}</p>
+                </nuxt-link>
+            </b-col>
+        </b-row>
+    </div>
 </template>
 
 <script>
@@ -26,7 +30,7 @@ export default {
             return util.formatSlug(text)
         },
         excerpt( text ) {
-            return text.substring(3, 75) + ' ...';
+            return text.substring(3, 150) + ' ...';
         }
     }
 }
@@ -34,6 +38,18 @@ export default {
 
 <style lang="scss" scoped>
 .th {
+    &__recent {
+        max-width: 80%;
+        margin: 150px auto 0;
+        text-align: left;
+
+        h2 {
+            max-width: none;
+        }
+        .row {
+            margin-top: 40px;
+        }
+    }
     &__link {
         &:after {
             @include position(absolute, 0,0,0,0);

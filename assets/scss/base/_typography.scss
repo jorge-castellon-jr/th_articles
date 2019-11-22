@@ -2,11 +2,19 @@
 // Typography
 //--------------------------------------------------------------
 
+@import url('https://rsms.me/inter/inter.css');
+
 // Because rem is relative to the root of the document, we need to set the font-size on html. This *MUST* be in px.
-html {
+html, * {
 	// sass-lint:disable property-units
-	font-size: $base-context * 1px;
+	font-family: 'Inter', sans-serif; 
+	font-size: $base-context * 1.6 * 1px;
 	// sass-lint:enable property-units
+}
+@supports (font-variation-settings: normal) {
+	html {
+		font-family: 'Inter var', sans-serif;
+	}
 }
 
 body,
@@ -23,7 +31,6 @@ textarea {
 // Headers
 //--------------------------------------------------------------
 h1, h2, h3, h4, h5, h6 {
-	font-family: $font-headings;
 	line-height: 1em;
 	color: $text-87;
 	max-width: 720px;
@@ -36,20 +43,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1,
 .h1 {
-	font-size: rem(30);
+	font-size: rem(40);
 
 	@media only screen and (min-width: $tablet-portrait) {
-		font-size: rem(45);
+		font-size: rem(64);
 	}
 } // h1, .h1
 
 h2,
 .h2 {
-	font-size: rem(28);
+	font-size: rem(23);
 	// text-align: center;
 
 	@media only screen and (min-width: $tablet-portrait) {
-		font-size: rem(36);
+		font-size: rem(30);
 	}
 } // h2, .h2
 

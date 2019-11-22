@@ -22,14 +22,14 @@ export default {
 <style lang="scss" scoped>
 .th {
     &__nav {
-        height: 120px;
+        // height: 100px;
         // background: linear-gradient(to bottom, rgba(255,255,255,1) 0, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
-        margin-bottom: 75px;
+        margin: 60px auto;
         display: flex;
         justify-content: center;
         z-index: 10;
         img {
-            max-height: 100px;
+            max-width: 250px;
         }
     }
 }

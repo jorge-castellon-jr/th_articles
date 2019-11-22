@@ -1,21 +1,11 @@
 <template>
   <b-row>
     <b-col>
-    <logo />
-    <h1 class="title">
-      edgepro
-    </h1>
-    <h2 class="subtitle">
-      My mathematical Nuxt.js project
-    </h2>
-    <RecentArticles :articles="articles" />
-    <div class="links">
-      <p v-for="page in pages" :key="page.attributes.title">
-        <nuxt-link :to="`/${formatSlug(page.attributes.title)}`">
-          {{ page.attributes.title }}
-        </nuxt-link>
-      </p>
-    </div>
+      <b-img fluid :src="home.home_image"/>
+      <h1 class="subtitle">
+        {{ home.sub_headline }}
+      </h1>
+      <RecentArticles :articles="articles" />
     </b-col>
   </b-row>
 </template>
@@ -43,6 +33,7 @@ export default {
     return {
       pages: await util.getAllPages(),
       articles: await util.getAllArticles(),
+      home: homeJSON,
       structuredData: {
         "@context": "http://schema.org",
         "@graph": [
@@ -105,25 +96,8 @@ export default {
   text-align: center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
 .subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  padding: 50px 0 0;
+  max-width: 80%;
 }
 </style>

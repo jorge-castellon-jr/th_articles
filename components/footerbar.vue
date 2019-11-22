@@ -1,15 +1,11 @@
 <template>
-    <b-navbar>
-        <b-collapse is-nav>
-            <b-navbar-nav>
-                <b-nav-item v-for="page in pages" :key="page.attributes.title">
-                    <nuxt-link :to="`/${formatSlug(page.attributes.title)}`">
-                        {{ page.attributes.title }}
-                    </nuxt-link>
-                </b-nav-item>
-            </b-navbar-nav>
-        </b-collapse>
-    </b-navbar>
+    <b-row class="th__footer">
+        <b-col md="7">
+            <h2>About the Org</h2>
+            <p>{{ json.about_organization }}</p>
+        </b-col>
+        <b-col></b-col>
+    </b-row>
 </template>
 
 <script>
@@ -17,7 +13,7 @@ import util from '~/assets/js/utils/global_func'
 
 export default {
     props: {
-        pages: Array
+        json: Object
     },
     methods: {
         formatSlug( text ){
@@ -26,3 +22,12 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+.th {
+    &__footer {
+        max-width: 80%;
+        margin: 150px auto 0;
+    }
+}
+</style>

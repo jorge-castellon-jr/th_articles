@@ -13,7 +13,7 @@ import util from '~/assets/js/utils/global_func'
 import companyJSON from '~/content/data/home.json'
 
 export default {
-    layout: 'articles',
+    // layout: 'articles',
     head() {
         return {
             title: this.article.attributes.title || '',
