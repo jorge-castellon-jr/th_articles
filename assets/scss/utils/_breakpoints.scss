@@ -5,36 +5,14 @@
 /// Standard Media Query Breakpoints
 /// @group wds
 
-$large-desktop: (
-	media: 1680px
-);
-$desktop: (
-	media: 1366px
-);
-$twelve-hundred: (
-	media: 1200px
-);
-$tablet-landscape: (
-	media: 1024px
-);
-$eight-fifty: (
-	media: 850px
-);
-$wp-admin-bar: (
-	media: 783px
-);
-$tablet-portrait: (
-	media: 768px
-);
-$phone-landscape: (
-	media: 640px
-);
-$hero-medium: (
-	media: 545px
-);
-$phone-portrait: (
-	media: 360px
-);
-$iphone6: (
-	media: 414px
-);
+$large-desktop: 1680px;
+$desktop: 1366px;
+$twelve-hundred: 1200px;
+$tablet-landscape: 1024px;
+$eight-fifty: 850px;
+$wp-admin-bar: 783px;
+$tablet-portrait: 768px;
+$phone-landscape: medi640px;
+$hero-medium: 545px;
+$phone-portrait: 360px;
+$iphone6: 414px;
