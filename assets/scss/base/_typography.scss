@@ -5,15 +5,13 @@
 @import url('https://rsms.me/inter/inter.css');
 
 // Because rem is relative to the root of the document, we need to set the font-size on html. This *MUST* be in px.
-html, * {
-	// sass-lint:disable property-units
-	font-family: 'Inter', sans-serif; 
+:root {
+	font-family: $font-inter; 
 	font-size: $base-context * 1px;
-	// sass-lint:enable property-units
 }
 @supports (font-variation-settings: normal) {
 	html {
-		font-family: 'Inter var', sans-serif;
+		font-family: $font-inter;
 	}
 }
 
@@ -23,7 +21,6 @@ input,
 select,
 textarea {
 	color: $color-text-main;
-	font-family: $font-sans;
 	line-height: $line-height-body;
 } // body, button, input, select, textarea
 
@@ -31,7 +28,7 @@ textarea {
 // Headers
 //--------------------------------------------------------------
 h1, h2, h3, h4, h5, h6 {
-	line-height: 1em;
+	line-height: 1.2em;
 	color: $text-87;
 	max-width: 720px;
 	margin-left: auto;
@@ -44,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 h1,
 .h1 {
 	font-size: rem(40);
+	font-weight: bold;
 
 	@media only screen and (min-width: $tablet-portrait) {
 		font-size: rem(64);
@@ -53,7 +51,7 @@ h1,
 h2,
 .h2 {
 	font-size: rem(23);
-	// text-align: center;
+	font-weight: bold;
 
 	@media only screen and (min-width: $tablet-portrait) {
 		font-size: rem(30);
@@ -106,7 +104,7 @@ h6,
 
 p, li {
 	margin: 0 auto rem(24) 0;
-	line-height: 1.6em;
+	font-size: rem(16);
 	color: $color-half-black;
 
 	@media only screen and (min-width: $tablet-portrait) {

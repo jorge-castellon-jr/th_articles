@@ -8,6 +8,14 @@ const dynamicRoutes = getDynamicPaths({
 
 export default {
   mode: 'universal',
+  router: {
+    scrollBehavior (to, from, savedPosition) {
+      // if (savedPosition) {
+      //   return window.scrollTo({ top: savedPosition.x, behavior: 'smooth' })
+      // }
+      return window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  },
   /*
   ** Headers of the article
   */

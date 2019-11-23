@@ -19,6 +19,7 @@ import navbar from '~/components/navbar.vue'
 import footerbar from '~/components/footerbar.vue'
 
 export default {
+    // scrollToTop: true,
     data () {
         return {
             util,

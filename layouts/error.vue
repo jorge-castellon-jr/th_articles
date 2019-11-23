@@ -25,7 +25,6 @@ export default {
 
 <style scoped>
 .container {
-  font-family: sans-serif;
   padding-top: 10%;
   text-align: center;
 }
