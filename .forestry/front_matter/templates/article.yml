@@ -31,6 +31,18 @@ fields:
     time_format: 
     display_utc: false
   default: now
+- name: author
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: author-list
+      file: 
+      path: 
+  label: Author
 pages:
 - content/articles/article-test-2.md
 - content/articles/test-article-1.md
