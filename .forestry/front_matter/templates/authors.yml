@@ -1,4 +1,14 @@
 ---
 label: Authors
 hide_body: true
-fields: []
+fields:
+- name: authors
+  type: field_group
+  config: {}
+  fields:
+  - name: authors_name
+    type: text
+    config:
+      required: false
+    label: Authors Name
+  label: Authors
