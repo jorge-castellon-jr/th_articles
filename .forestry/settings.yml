@@ -23,6 +23,8 @@ sections:
   match: "**/*"
   templates:
   - page
+- type: heading
+  label: Extra
 upload_dir: static/media
 public_path: "/media"
 front_matter_path: "/media"
