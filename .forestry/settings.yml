@@ -25,6 +25,11 @@ sections:
   - page
 - type: heading
   label: Extra
+- type: document
+  path: content/data/authors.json
+  label: Author List
+  match: "**/*"
+  read_only: true
 upload_dir: static/media
 public_path: "/media"
 front_matter_path: "/media"
