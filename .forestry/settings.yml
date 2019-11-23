@@ -28,8 +28,7 @@ sections:
 - type: document
   path: content/data/authors.json
   label: Author List
-  match: "**/*"
-  read_only: true
+  read_only: false
 upload_dir: static/media
 public_path: "/media"
 front_matter_path: "/media"
