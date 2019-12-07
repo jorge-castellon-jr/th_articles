@@ -28,7 +28,6 @@ sections:
 - type: document
   path: content/data/nav.json
   label: Navigation Links
-  match: "**/*"
 - type: document
   path: content/data/authors.json
   label: Author List
