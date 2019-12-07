@@ -3,18 +3,24 @@ title: About Us
 description: About Us
 blocks:
 - template: content
-  content: "<p>Cat o'nine tails Buccaneer scallywag starboard capstan grog Letter
-    of Marque aye belaying pin lass. Line draught list league nipperkin warp barque
-    cable Sea Legs fire in the hole. Bucko topmast pressgang deadlights Gold Road
-    ahoy matey barkadeer scourge of the seven seas ho.</p><p>American Main Barbary
-    Coast Yellow Jack bring a spring upon her cable brigantine hearties scallywag
-    sutler Sail ho execution dock. Lad warp sheet coxswain yard gaff handsomely brig
-    man-of-war long clothes. Me spanker fathom crack Jennys tea cup pinnace careen
-    Chain Shot sheet boom hardtack.</p><p>Smartly pressgang Davy Jones' Locker cackle
-    fruit skysail topgallant rigging stern warp yard. Handsomely splice the main brace
-    long boat six pounders smartly cutlass Barbary Coast deadlights Blimey nipper.
-    Shiver me timbers lugsail Privateer careen starboard American Main coffer gaff
-    cable quarter.</p>"
+  content: '<h2>Our Mission</h2><p>Our mission is to persuade people to act, in all
+    aspects of their lives, in concert with social principles that advance Human Happiness,
+    Harmony and Prosperity.</p><h2>Our Vision</h2><p>To see vibrant communities in
+    which the cultural norm is to rely exclusively on voluntary relationships in the
+    course of advancing their personal interests and values. Individuals will categorically
+    reject the use of all agents—personal, social, or political—who seek to initiate
+    force or fraud on their behalf.</p><h2>Our Message: Social Principles</h2><ol><li><p>All
+    living organisms, including human beings, have an innate drive toward greater
+    flourishing, happiness and life satisfaction.</p></li><li><p>Physical harm to
+    a person always decreases his or her opportunity to flourish, to achieve happiness
+    and life satisfaction.</p></li><li><p>Stealing a person’s property always decreases
+    his or her happiness or life satisfaction.</p></li></ol><h2>The Challenge</h2><p>Although
+    a vast majority of individuals recognize these fundamental realities of human
+    nature, too many are unaware of the ways they are disregarded and the negative
+    consequences for the happiness and life satisfaction of their fellows.</p><p>The
+    Foundation exists to shed light on the myriad ways institutions and individuals
+    within a "society" breach these principles, and how we each can pursue our own
+    happiness without violating our most valued principles.</p><p><br></p>'
 robots_: true
 
 ---
