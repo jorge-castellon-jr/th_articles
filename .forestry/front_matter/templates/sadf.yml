@@ -1,14 +1,17 @@
 ---
 label: Article Link
 hide_body: true
+display_field: article
 fields:
 - name: article
-  type: list
+  type: select
+  default: []
   config:
-    use_select: true
-    min: 
-    max: 
+    required: false
+    options: []
     source:
       type: pages
       section: articles
+      file: 
+      path: 
   label: Article
