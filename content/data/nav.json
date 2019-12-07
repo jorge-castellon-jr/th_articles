@@ -1,18 +1,5 @@
 {
-  "main_nav": [
-    "content/articles/test-article-1.md"
-  ],
-  "list": [
-    {
-      "template": "nav-list",
-      "list": [
-        {
-          "template": "nav-list"
-        }
-      ]
-    }
-  ],
-  "link": [
+  "links": [
     {
       "template": "plain-link",
       "name": "Home",
