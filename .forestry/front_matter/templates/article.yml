@@ -38,10 +38,10 @@ fields:
     required: false
     options: []
     source:
-      type: pages
+      type: documents
       section: author-list
-      file: 
-      path: 
+      file: content/data/authors.json
+      path: name
   label: Author
 pages:
 - content/articles/article-test-2.md
