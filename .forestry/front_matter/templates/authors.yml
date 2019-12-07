@@ -9,3 +9,5 @@ fields:
     min: 
     max: 
   label: Name
+pages:
+- content/data/authors.json
