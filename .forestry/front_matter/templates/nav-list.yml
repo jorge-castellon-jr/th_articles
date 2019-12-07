@@ -2,7 +2,7 @@
 label: Navigation Links
 hide_body: true
 fields:
-- name: link
+- name: links
   type: blocks
   label: Links
   template_types:
