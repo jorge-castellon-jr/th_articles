@@ -24,9 +24,7 @@
     },
     {
       "template": "sadf",
-      "article": [
-        "content/articles/article-test-2.md"
-      ]
+      "article": "content/articles/article-test-2.md"
     }
   ]
 }
