@@ -2,7 +2,8 @@
 title: Article Test 2
 description: ''
 featured_image: "/media/isscqchjwgm31.jpg"
-article_date: 2019-11-22T01:53:26Z
+article_date: 2019-11-22T01:53:26.000+00:00
+author: Jorge Castellon
 
 ---
 Cat o'nine tails Buccaneer scallywag starboard capstan grog Letter of Marque aye belaying pin lass. Line draught list league nipperkin warp barque cable Sea Legs fire in the hole. Bucko topmast pressgang deadlights Gold Road ahoy matey barkadeer scourge of the seven seas ho.
