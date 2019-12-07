@@ -26,6 +26,10 @@ sections:
 - type: heading
   label: Extra
 - type: document
+  path: content/data/nav.json
+  label: Navigation Links
+  match: "**/*"
+- type: document
   path: content/data/authors.json
   label: Author List
 upload_dir: static/media
