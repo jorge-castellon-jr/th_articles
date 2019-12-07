@@ -33,6 +33,6 @@ fields:
   label: Robots Follow?
 pages:
 - content/pages/value-quiz.md
-- content/pages/watch.md
 - content/pages/about-us.md
 - content/pages/colleagues.md
+- content/pages/watch.md

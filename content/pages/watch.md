@@ -8,7 +8,7 @@ blocks:
     saying, “Hm, I never thought about it that way!”</p><p>&lt;iframe width="560"
     height="315" src="https://www.youtube-nocookie.com/embed/Yt_q6YR5Ugo?controls=0"
     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen&gt;&lt;/iframe&gt;</p>
+    allowfullscreen&gt;&lt;/iframe&gt;</p><p>{{% youtube "Yt_q6YR5Ugo %}}</p>
 robots_: false
 
 ---
