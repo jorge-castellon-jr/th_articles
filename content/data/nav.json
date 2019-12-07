@@ -15,18 +15,13 @@
   "link": [
     {
       "template": "plain-link",
-      "name": "Thorium Design",
-      "url": "thoriumdesign.com"
+      "name": "Home",
+      "url": "/"
     },
     {
       "template": "page-link",
       "page": "content/pages/about-us.md",
       "name": "About Us"
-    },
-    {
-      "template": "sadf",
-      "article": "content/articles/article-test-2.md",
-      "name": "Article Test"
     }
   ]
 }
