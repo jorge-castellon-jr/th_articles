@@ -1,6 +1,7 @@
 ---
 label: Page Link
 hide_body: true
+display_field: page
 fields:
 - name: page
   type: select
