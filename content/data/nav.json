@@ -1,0 +1,34 @@
+{
+  "main_nav": [
+    "content/articles/test-article-1.md"
+  ],
+  "list": [
+    {
+      "template": "nav-list",
+      "list": [
+        {
+          "template": "nav-list"
+        }
+      ]
+    }
+  ],
+  "link": [
+    {
+      "template": "plain-link",
+      "name": "Thorium Design",
+      "url": "thoriumdesign.com"
+    },
+    {
+      "template": "page-link",
+      "page": [
+        "content/pages/about-us.md"
+      ]
+    },
+    {
+      "template": "sadf",
+      "article": [
+        "content/articles/article-test-2.md"
+      ]
+    }
+  ]
+}
