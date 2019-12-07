@@ -53,9 +53,9 @@ fields:
   template_types:
   - columns
   - cards
-  - article
   - gallery
   - content
+  - html
   config:
     min: 
     max: 
