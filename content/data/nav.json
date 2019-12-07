@@ -20,9 +20,7 @@
     },
     {
       "template": "page-link",
-      "page": [
-        "content/pages/about-us.md"
-      ]
+      "page": "content/pages/about-us.md"
     },
     {
       "template": "sadf",
