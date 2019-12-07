@@ -6,7 +6,9 @@ fields:
   type: blocks
   label: Link
   template_types:
-  - nav-list
+  - plain-link
+  - page-link
+  - sadf
   config:
     min: 
     max: 
