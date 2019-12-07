@@ -24,6 +24,47 @@
           "button_label": "",
           "button_link": "",
           "card_title": "Happiness"
+        },
+        {
+          "card_title": "Harmony",
+          "card_image": "/media/Layer 2.png",
+          "card_content": "",
+          "button_": false,
+          "button_label": "",
+          "button_link": ""
+        },
+        {
+          "card_title": "Prosperity",
+          "card_image": "/media/Layer 3.png",
+          "card_content": "",
+          "button_": false,
+          "button_label": "",
+          "button_link": ""
+        }
+      ]
+    },
+    {
+      "template": "content",
+      "content": "<h1>What is your fundamental mission in life?</h1>"
+    },
+    {
+      "template": "columns",
+      "columns": [
+        {
+          "type": "Content",
+          "column_image": "",
+          "column_content": "<p>Our mission is to persuade people to act, in all aspects of their lives, in concert with social principles that advance Human Happiness, Harmony and Prosperity.</p><p>Human relationships are complex, yet they are guided by principles as simple and predictable as gravity. We invite you to explore the impact of social principles on our lives, with our families, and in our communities.</p>",
+          "button_": false,
+          "button_label": "",
+          "button_link": ""
+        },
+        {
+          "column_image": "",
+          "column_content": "<p><img src=\"/media/movie.png\"> <img src=\"/media/survey_icon.png\"></p>",
+          "button_": false,
+          "button_label": "",
+          "button_link": "",
+          "type": "Content"
         }
       ]
     }
