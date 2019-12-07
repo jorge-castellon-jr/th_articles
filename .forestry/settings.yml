@@ -27,7 +27,7 @@ sections:
   label: Extra
 - type: document
   path: content/data/nav.json
-  label: Navigation Links
+  label: Main Navigation
 - type: document
   path: content/data/authors.json
   label: Author List
