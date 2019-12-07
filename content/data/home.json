@@ -14,6 +14,35 @@
   "about_organization": "Moving the goalposts herding cats, so idea shower pro-sumer software talk to the slides. How much bandwidth do you have how much bandwidth do you have disband the squad but rehydrate as needed sea change.",
   "blocks": [
     {
+      "template": "columns",
+      "columns": [
+        {
+          "type": "Image",
+          "column_image": "/media/Layer 1.png",
+          "column_content": "<p><img src=\"/media/Layer 1.png\"></p><p>Happiness</p>",
+          "button_": false,
+          "button_label": "",
+          "button_link": ""
+        },
+        {
+          "type": "Content",
+          "column_image": "",
+          "column_content": "",
+          "button_": false,
+          "button_label": "",
+          "button_link": ""
+        },
+        {
+          "type": "Content",
+          "column_image": "",
+          "column_content": "",
+          "button_": false,
+          "button_label": "",
+          "button_link": ""
+        }
+      ]
+    },
+    {
       "template": "cards",
       "card_columns": "3",
       "cards": [
