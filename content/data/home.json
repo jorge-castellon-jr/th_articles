@@ -43,36 +43,6 @@
       ]
     },
     {
-      "template": "cards",
-      "card_columns": "3",
-      "cards": [
-        {
-          "card_content": "",
-          "card_image": "/media/Layer 1.png",
-          "button_": false,
-          "button_label": "",
-          "button_link": "",
-          "card_title": "Happiness"
-        },
-        {
-          "card_title": "Harmony",
-          "card_image": "/media/Layer 2.png",
-          "card_content": "",
-          "button_": false,
-          "button_label": "",
-          "button_link": ""
-        },
-        {
-          "card_title": "Prosperity",
-          "card_image": "/media/Layer 3.png",
-          "card_content": "",
-          "button_": false,
-          "button_label": "",
-          "button_link": ""
-        }
-      ]
-    },
-    {
       "template": "content",
       "content": "<h1>What is your fundamental mission in life?</h1>"
     },
