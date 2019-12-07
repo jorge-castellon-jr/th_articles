@@ -11,5 +11,21 @@
   "company_zip": "12345",
   "home_image": "/media/okrueod.png",
   "sub_headline": "The spectacle before us was indeed sublime.",
-  "about_organization": "Moving the goalposts herding cats, so idea shower pro-sumer software talk to the slides. How much bandwidth do you have how much bandwidth do you have disband the squad but rehydrate as needed sea change."
+  "about_organization": "Moving the goalposts herding cats, so idea shower pro-sumer software talk to the slides. How much bandwidth do you have how much bandwidth do you have disband the squad but rehydrate as needed sea change.",
+  "block": [
+    {
+      "template": "cards",
+      "card_columns": "3",
+      "cards": [
+        {
+          "card_content": "",
+          "card_image": "/media/Layer 1.png",
+          "button_": false,
+          "button_label": "",
+          "button_link": "",
+          "card_title": "Happiness"
+        }
+      ]
+    }
+  ]
 }
