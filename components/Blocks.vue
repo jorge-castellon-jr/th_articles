@@ -6,6 +6,7 @@
             <Gallery v-else-if="block.template === 'gallery'" :block="block" />
             <Generic v-else-if="block.template === 'content'" :block="block" />
             <Cards v-else-if="block.template === 'cards'" :block="block" />
+            <span v-else v-html="block.html" class="th__block-html"></span>
         </div>
     </div>
 </template>
@@ -34,6 +35,10 @@ export default {
     &__block {
         margin: 75px auto;
         padding: 50px 0;
+        &-html {
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 </style>
