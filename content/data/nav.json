@@ -19,6 +19,11 @@
       "template": "page-link",
       "page": "content/pages/watch.md",
       "name": "Watch"
+    },
+    {
+      "template": "page-link",
+      "page": "content/pages/value-quiz.md",
+      "name": "Values Quiz"
     }
   ]
 }
