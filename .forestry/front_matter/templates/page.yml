@@ -33,3 +33,4 @@ fields:
   label: Robots Follow?
 pages:
 - content/pages/about-us.md
+- content/pages/colleagues.md
