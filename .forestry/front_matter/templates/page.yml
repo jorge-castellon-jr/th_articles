@@ -32,7 +32,7 @@ fields:
   type: boolean
   label: Robots Follow?
 pages:
-- content/pages/watch.md
 - content/pages/value-quiz.md
 - content/pages/about-us.md
 - content/pages/colleagues.md
+- content/pages/watch.md
