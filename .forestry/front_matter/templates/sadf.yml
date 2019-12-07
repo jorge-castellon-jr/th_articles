@@ -1,7 +1,7 @@
 ---
 label: Article Link
 hide_body: true
-display_field: article
+display_field: name
 fields:
 - name: article
   type: select
@@ -15,3 +15,8 @@ fields:
       file: 
       path: 
   label: Article
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
