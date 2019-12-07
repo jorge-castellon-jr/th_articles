@@ -25,16 +25,16 @@
           "button_link": ""
         },
         {
-          "type": "Content",
-          "column_image": "",
+          "type": "Image",
+          "column_image": "/media/Layer 2.png",
           "column_content": "",
           "button_": false,
           "button_label": "",
           "button_link": ""
         },
         {
-          "type": "Content",
-          "column_image": "",
+          "type": "Image",
+          "column_image": "/media/Layer 3.png",
           "column_content": "",
           "button_": false,
           "button_label": "",
