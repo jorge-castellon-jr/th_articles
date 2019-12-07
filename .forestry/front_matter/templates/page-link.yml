@@ -3,6 +3,11 @@ label: Page Link
 hide_body: true
 display_field: page
 fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
 - name: page
   type: select
   default: []
