@@ -9,6 +9,11 @@
       "template": "page-link",
       "page": "content/pages/about-us.md",
       "name": "About Us"
+    },
+    {
+      "template": "page-link",
+      "page": "content/pages/colleagues.md",
+      "name": "Colleagues"
     }
   ]
 }
