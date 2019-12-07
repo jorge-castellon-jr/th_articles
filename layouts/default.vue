@@ -1,11 +1,14 @@
 <template>
-    <b-container>
+    <b-container fluid>
         <b-row>
             <b-col>
                 <navbar :json="homeJSON" />
             </b-col>
         </b-row>
-        <nuxt :util="util" />
+        <b-container>
+            <nuxt :util="util" />
+        </b-container>
+        
         <footerbar :json="homeJSON" />
     </b-container>
 </template>

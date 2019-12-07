@@ -1,7 +1,7 @@
 <template>
     <b-row class="th__footer">
         <b-col md="7">
-            <h2>About the Org</h2>
+            <h2><nuxt-link to="/about-us">About the Org</nuxt-link></h2>
             <p>{{ json.about_organization }}</p>
         </b-col>
         <b-col></b-col>

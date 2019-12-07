@@ -1,13 +1,11 @@
 <template>
     <b-row class="th__row">
-        <navbar :json="home" />
         <b-row>
             <b-col>
                 <h1 class="title">{{ page.title }}</h1>
                 <Blocks :blocks="page.blocks" />
             </b-col>
         </b-row>
-        <footerbar :pages="pages" />
     </b-row>
 </template>
 
@@ -16,8 +14,6 @@ import util from '~/assets/js/utils/global_func'
 import homeJSON from '~/content/data/home.json'
 
 // Components
-import navbar from '~/components/navbar.vue'
-import footerbar from '~/components/footerbar.vue'
 import Blocks from '~/components/Blocks.vue'
 
 export default {
@@ -85,8 +81,6 @@ export default {
         }
     },
     components: {
-        navbar,
-        footerbar,
         Blocks
     }
 }

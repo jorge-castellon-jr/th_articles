@@ -1,11 +1,12 @@
 <template>
   <b-row>
     <b-col>
-      <b-img fluid :src="home.home_image"/>
+      <!-- <b-img fluid :src="home.home_image"/>
       <h1 class="subtitle">
         {{ home.sub_headline }}
-      </h1>
-      <RecentArticles :articles="articles" />
+      </h1> -->
+      <!-- <RecentArticles :articles="articles" /> -->
+      <Blocks :blocks="home.blocks" />
     </b-col>
   </b-row>
 </template>
@@ -16,6 +17,7 @@ import util from '~/assets/js/utils/global_func'
 import homeJSON from '~/content/data/home.json'
 
 // Components
+import Blocks from '~/components/Blocks.vue'
 import RecentArticles from '~/components/RecentArticles.vue'
 
 export default {
@@ -76,6 +78,7 @@ export default {
   },
   components: {
     Logo,
+    Blocks,
     RecentArticles
   },
   methods: {
@@ -89,7 +92,7 @@ export default {
 <style lang="scss" scoped>
 .row {
   margin: 0 auto;
-  min-height: 100vh;
+  // min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
