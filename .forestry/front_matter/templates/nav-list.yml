@@ -2,9 +2,9 @@
 label: Navigation Links
 hide_body: true
 fields:
-- name: list
+- name: link
   type: blocks
-  label: List
+  label: Link
   template_types:
   - nav-list
   config:
