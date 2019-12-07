@@ -2,14 +2,10 @@
 label: Authors
 hide_body: true
 fields:
-- name: authors_name
+- name: name
   type: list
   config:
-    use_select: true
+    use_select: false
     min: 
     max: 
-    source:
-      type: pages
-      section: author-list
-      file: content/data/authors.json
-  label: Authors Name
+  label: Name
