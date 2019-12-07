@@ -47,9 +47,9 @@ fields:
   config:
     required: false
     color_format: Hex
-- name: block
+- name: blocks
   type: blocks
-  label: Block
+  label: Blocks
   template_types:
   - columns
   - cards
