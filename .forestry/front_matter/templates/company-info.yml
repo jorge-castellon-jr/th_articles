@@ -47,5 +47,17 @@ fields:
   config:
     required: false
     color_format: Hex
+- name: block
+  type: blocks
+  label: Block
+  template_types:
+  - columns
+  - cards
+  - article
+  - gallery
+  - content
+  config:
+    min: 
+    max: 
 pages:
 - content/data/home.json
