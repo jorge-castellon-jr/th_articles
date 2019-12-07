@@ -20,11 +20,13 @@
     },
     {
       "template": "page-link",
-      "page": "content/pages/about-us.md"
+      "page": "content/pages/about-us.md",
+      "name": "About Us"
     },
     {
       "template": "sadf",
-      "article": "content/articles/article-test-2.md"
+      "article": "content/articles/article-test-2.md",
+      "name": "Article Test"
     }
   ]
 }
