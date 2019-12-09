@@ -1,12 +1,14 @@
 <template>
     <b-container fluid>
-        <b-row>
-            <b-col>
-                <navbar :json="homeJSON" />
-            </b-col>
-        </b-row>
+        <style>
+            :root {
+                --home-primary: {{ homeJSON.primary_color }};
+                --home-secondary: {{ homeJSON.secondary_color }}
+            }
+        </style>
+        <navbar :json="homeJSON" />
         <b-container>
-            <nuxt :util="util" />
+            <nuxt :util="util" :home="homeJSON" />
         </b-container>
         
         <footerbar :json="homeJSON" />

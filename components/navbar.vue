@@ -1,19 +1,23 @@
 <template>
-    <b-navbar class="th__nav">
-        <b-navbar-brand>
-            <nuxt-link to="/">
-                <img :src="`${json.company_logo}`" :alt="`${json.company_name} Logo`">
-                <!-- {{ json.company_name }} -->
-            </nuxt-link>
-        </b-navbar-brand>
-        <b-collapse is-nav>
-            <b-navbar-nav align="right" fill>
-                <b-nav-item v-for="link in navList.links" :key="link.name" href="">
-                    <nuxt-link :to="parseLink(link)">{{ link.name }}</nuxt-link>
-                </b-nav-item>
-            </b-navbar-nav>
-            </b-collapse>
-    </b-navbar>
+    <b-row class="th__row">
+        <b-col>
+            <b-navbar class="th__nav">
+                <b-navbar-brand>
+                    <nuxt-link to="/">
+                        <img :src="`${json.company_logo}`" :alt="`${json.company_name} Logo`">
+                        <!-- {{ json.company_name }} -->
+                    </nuxt-link>
+                </b-navbar-brand>
+                <b-collapse is-nav>
+                    <b-navbar-nav align="right" fill>
+                        <b-nav-item v-for="link in navList.links" :key="link.name" href="">
+                            <nuxt-link :to="parseLink(link)">{{ link.name }}</nuxt-link>
+                        </b-nav-item>
+                    </b-navbar-nav>
+                    </b-collapse>
+            </b-navbar>
+        </b-col>
+    </b-row>
 </template>
 
 <script>
@@ -54,10 +58,14 @@ export default {
 
 <style lang="scss" scoped>
 .th {
+    &__row {
+        border-bottom: 1px solid var(--home-primary);
+        margin: 20px -15px 60px;
+    }
     &__nav {
         // height: 100px;
         // background: linear-gradient(to bottom, rgba(255,255,255,1) 0, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
-        margin: 60px auto;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         z-index: 10;
@@ -66,11 +74,17 @@ export default {
         }
         ul {
             list-style: none;
+            margin: 0;
             .nav-link {
                 // margin: 0 5px;
                 padding: 0;
                 a {
-                    padding: 5px 20px;
+                    color: var(--home-primary);
+                    padding: 20px;
+
+                    &:hover {
+                        color: var(--home-secondary)
+                    }
                 }
             }
         }
