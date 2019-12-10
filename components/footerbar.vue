@@ -2,7 +2,7 @@
     <b-row class="th__footer">
         <b-col md="7">
             <h2><nuxt-link to="/about-us">About the Org</nuxt-link></h2>
-            <p>{{ json.about_organization }}</p>
+            <!-- <p>{{ json.about_organization }}</p> -->
             <span>© Copyright {{ currentYear() }}, The Foundation for Harmony and Prosperity, All Rights Reserved.</span>
         </b-col>
         <b-col></b-col>

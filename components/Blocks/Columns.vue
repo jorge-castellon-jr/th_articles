@@ -18,8 +18,18 @@ export default {
 
 <style lang="scss" scoped>
 .row {
-    max-width: 750px;
+    max-width: 1075px;
     margin: 0 auto;
+}
+.th {
+    &__col {
+        span {
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 </style>
