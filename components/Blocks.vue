@@ -33,8 +33,8 @@ export default {
 <style lang="scss" scoped>
 .th {
     &__block {
-        margin: 75px auto;
-        padding: 50px 0;
+        margin: 30px auto;
+        padding: 10px 0;
         &-html {
             display: flex;
             justify-content: center;
