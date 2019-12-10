@@ -1,31 +1,18 @@
 ---
-label: Home Info
+label: Homepage
 hide_body: true
+display_field: company_name
 fields:
-- name: home_image
-  type: file
-  config:
-    maxSize: 250
-  label: Home Image
-- name: sub_headline
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Sub Headline
-- name: company_name
-  type: text
-  config:
-    required: false
-  label: Organization Name
 - name: company_logo
   type: file
   config:
     maxSize: 250
   label: Organization Logo
+- name: company_name
+  type: text
+  config:
+    required: false
+  label: Organization Name
 - name: about_organization
   type: textarea
   default: ''
